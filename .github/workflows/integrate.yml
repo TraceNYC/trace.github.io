@@ -3,6 +3,8 @@ on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: /trace.github.io
     defaults:
       run:
         working-directory: ./src
