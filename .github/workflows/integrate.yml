@@ -32,6 +32,8 @@ jobs:
         uses: actions/setup-node@v1
       - run: npm ci
       - run: npm run build
+        env:
+            CI: true
 
       - name: Export static files
         run: npm run export
