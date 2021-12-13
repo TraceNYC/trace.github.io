@@ -1,81 +1,92 @@
 import Link from 'next/link';
 import navStyles from '../styles/Navbar.module.css'
-import { Box, Flex, IconButton, useColorModeValue } from '@chakra-ui/react'
+import { Box, Flex, IconButton, Text } from '@chakra-ui/react'
 import { 
   AiFillGithub,
   AiFillLinkedin
 } from "react-icons/ai";
 import { prefix } from '../utils/prefix';
-import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 
 const Navbar = () => {
 
-  const Links = [
-    {
-      name: "HOME",
-      path: "/",
-    },
-    {
-      name: "ABOUT",
-      path: "/about",
-    },
-    {
-      name: "How To",
-      path: "/howTo/",
-    }
-  ];
-
   return (
-    <div className="navStyles.navbar">
+    <Flex
+      justifyContent="space-between"
+      backgroundColor={'#1A202C'}
+      color={'#fff'}
+      pb={5}
+    >
       <Flex
-        justifyContent="space-between"
+        alignItems="flex-end"
       >
-        <Flex>
+        <Flex alignItems='center'>
           <Link href="/">
             <img 
-               src={`${prefix}/T.png`}
+              src={`${prefix}/T.png`}
               alt='Trace Logo'
               width={'50px'}
               height={'50px'}
             />
           </Link>
-          <Box
+          <Text
+            ml={'.5rem'}
             px={2}
-            py={1}
-            rounded={"md"}
-            _hover={{
-              textDecoration: "none",
-              bg: useColorModeValue("gray.200", "gray.700"),
-            }}
-          >
-            <Link href="/about">About</Link>
-          </Box>
-          <Box
-            px={2}
-            py={1}
-            rounded={"md"}
-            _hover={{
-              textDecoration: "none",
-              bg: useColorModeValue("gray.200", "gray.700"),
-            }}
-          >
-            <Link href="/getting-started">Getting Started</Link>
-          </Box>
+            fontFamily={'Montserrat'}
+            fontWeight={'700'}
+            fontSize={'2.5rem'}
+          >TRACE</Text>
         </Flex>
-        <Flex>
-          <IconButton 
-            href='https://www.linkedin.com/company/go-trace'
-            aria-label='LinkedIn' 
-            icon={<AiFillLinkedin />}  
-          />
-          <IconButton 
-            href='https://github.com/oslabs-beta/trace'
-            aria-label='GitHub' 
-            icon={<AiFillGithub />}  
-          />
-        </Flex>
+        <Box
+          px={2}
+          py={3}
+          color='gray.500'
+          _hover={{
+            textDecoration: "underline",
+            color: "#fff"
+          }}
+          fontFamily={'Montserrat'}
+          fontWeight={'400'}
+          textUnderlineOffset={'0.5em'}
+        >
+          <Link href="/about">ABOUT</Link>
+        </Box>
+        <Box
+          px={2}
+          py={3}
+          color='gray.500'
+          _hover={{
+            textDecoration: "underline",
+            color: "#fff"
+          }}
+          fontFamily={'Montserrat'}
+          fontWeight={'400'}
+          textUnderlineOffset={'0.5em'}
+        >
+          <Link href="/getting-started">GETTING STARTED</Link>
+        </Box>
       </Flex>
-    </div>
+      <Flex
+        alignItems="center"
+        pt={3}
+      >
+        <IconButton 
+          href='https://www.linkedin.com/company/go-trace'
+          aria-label='LinkedIn' 
+          variant='link'
+          size='lg'
+          _hover={{ color: '#fff' }}
+          icon={<AiFillLinkedin />}  
+        />
+        <IconButton 
+          href='https://github.com/oslabs-beta/trace'
+          aria-label='GitHub' 
+          variant='link'
+          size='lg'
+          _hover={{ color: '#fff' }}
+          icon={<AiFillGithub />}  
+        />
+      </Flex>
+    </Flex>
   )
 }
 
