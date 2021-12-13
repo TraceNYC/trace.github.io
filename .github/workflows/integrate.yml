@@ -30,13 +30,17 @@ jobs:
 
       - name: Install and Build
         uses: actions/setup-node@v1
-      - run: npm install
+      - run: npm ci
       - run: npm run build
-        env:
-          CI: true
+
+      - name: Export static files
+        run: npm run export
+
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
 
       - name: Deploy 
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages 
