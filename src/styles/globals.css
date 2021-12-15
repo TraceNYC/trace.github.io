@@ -10,6 +10,8 @@ body {
   color: #fff;
   font-size: .9rem;
   scroll-behavior: smooth;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
