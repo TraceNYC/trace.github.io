@@ -39,7 +39,7 @@ const About = () => {
         >
           <Heading
             as='h1'
-            fontSize={['3rem','4.5rem','6.5rem','7.5rem','12rem']}
+            fontSize={['2.4rem','4.5rem','6.5rem','7.5rem','12rem']}
             fontFamily='Montserrat'
             size='4xl'
             textAlign={['center', 'center', 'left', 'left', 'left']}
@@ -51,12 +51,12 @@ const About = () => {
             What is Trace?
           </Heading>
           <Text w={['90%','90%','60%','50%','50%']} color='#fff' pr='4rem' pl='4rem' fontSize={['.9rem','1.2rem','1.2rem','1.4rem','1.4rem']} lineHeight='1.7' textAlign='justify'>
-            {"Trace is a lightweight, open-source GraphQL query performance monitoring GUI that provides users with real-time, resolver-level performance tracing metrics and error logging. At its inception, Trace was created for the developer looking for a straightforward option for query performance monitoring on their Express-GraphQL server -- without having to install hefty libraries full of tools they'll never use such as Apollo or Hasura. Trace provides a simple, intuitive interface for users looking to test queries for their Express-GraphQL servers."}
+            {"Trace is a lightweight, open-source GraphQL query performance monitoring GUI that provides users with real-time, resolver-level performance tracing metrics and error logging. At its inception, Trace was created for the developer looking for a straightforward option for query performance monitoring on their Express-GraphQL server — without having to install hefty libraries full of tools they'll never use such as Apollo or Hasura. Trace provides a simple, intuitive interface for users looking to test queries for their Express-GraphQL servers."}
           </Text>
         </Flex>
 
       </Flex>
-      <DownButton navId='#Features' />
+      <DownButton navId='#Features' bottom='13%' />
     </Box>
   )
 }
