@@ -53,7 +53,7 @@ const Navbar = () => {
           fontWeight={'400'}
           textUnderlineOffset={'0.5em'}
         >
-          <Link href="#About">ABOUT</Link>
+          <Link href="#About" passHref>ABOUT</Link>
         </Box>
         <Box
           alignSelf='center'
@@ -67,7 +67,7 @@ const Navbar = () => {
           fontWeight={'400'}
           textUnderlineOffset={'0.5em'}
         >
-          <Link href="#Features">FEATURES</Link>
+          <Link href="#Features" passHref>FEATURES</Link>
         </Box>
         <Box
           alignSelf='center'
@@ -81,7 +81,7 @@ const Navbar = () => {
           fontWeight={'400'}
           textUnderlineOffset={'0.5em'}
         >
-          <Link href="#GettingStarted">GETTING STARTED</Link>
+          <Link href="#GettingStarted" passHref>GETTING STARTED</Link>
         </Box>
         <Box
           alignSelf='center'
@@ -95,7 +95,7 @@ const Navbar = () => {
           fontWeight={'400'}
           textUnderlineOffset={'0.5em'}
         >
-          <Link href="#Team">THE TEAM</Link>
+          <Link href="#Team" passHref>THE TEAM</Link>
         </Box>
         <Box
           alignSelf='center'
@@ -109,7 +109,7 @@ const Navbar = () => {
           fontWeight={'400'}
           textUnderlineOffset={'0.5em'}
         >
-          <Link href="#Contributions">CONTRIBUTIONS</Link>
+          <Link href="#Contributions" passHref>CONTRIBUTIONS</Link>
         </Box>
       </Flex>
       <Flex
