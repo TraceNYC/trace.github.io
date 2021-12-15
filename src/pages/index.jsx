@@ -1,11 +1,19 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Navbar from '../components/Navbar'
+import Landing from '../components/Landing'
+import About from '../components/About'
+import Features from '../components/Features'
+import GettingStarted from '../components/GettingStarted'
+import Team from '../components/Team'
+import Contributions from '../components/Contributions'
 
 const Home = () => {
   return (
     <>
-      
+      <Landing />
+      <About />
+      <Features />
+      <GettingStarted />
+      <Team />
+      <Contributions />
     </>
   )
 }
