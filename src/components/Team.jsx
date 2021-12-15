@@ -40,8 +40,6 @@ const Team = () => {
         h='100%'
         w='100vw'
         pt='9rem'
-        pl='3rem'
-        pr='3rem'
         bgColor='#004A98'
         align='center'
       >
@@ -49,17 +47,17 @@ const Team = () => {
         initial={{ opacity: 0, pl: '-30px' }}
         whileInView={{ opacity: 1, pl: '8rem' }}
         viewport={{ once: true }}> */}
-        <Heading as='h2' fontSize={['3rem','3rem','3rem','4rem','4.2rem']} bgColor='transparent' color='#fff' fontFamily='Montserrat' pt='1rem'>
+        <Heading as='h2' fontSize={['2rem','3rem','3rem','4rem','4.2rem']} bgColor='transparent' color='#fff' fontFamily='Montserrat' pt='1rem'>
           Meet the Team
         </Heading>
         <Grid
           templateColumns='repeat(2, 1fr)'
           templateRows='repeat(2, 20vh)'
-          rowGap='5rem'
-          columnGap='5rem'
+          rowGap='3rem'
+          columnGap='3rem'
           pt='5rem'
           color='#fff'
-          w='100%'
+          w='100vw'
         >
           <Flex direction='column' align='center'>
             <TempBox>Picture</TempBox>
@@ -86,7 +84,7 @@ const Team = () => {
         </Grid>
         {/* </motion.div> */}
       </Box>
-      <DownButton navId='#Contributions' bottom='-5' left='48%'/>
+      <DownButton navId='#Contributions' bottom='-15' left='48%'/>
     </Box>
   )
 }

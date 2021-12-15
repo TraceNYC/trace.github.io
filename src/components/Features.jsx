@@ -42,6 +42,7 @@ const Features = () => {
   return (
     <Box
       h='100%'
+      minHeight='100vh'
       w='100vw'
       bgColor='#1A202C'
       pb='3rem'
@@ -98,7 +99,7 @@ const Features = () => {
           </StyledFeatureWrapper>
         </Flex>
       </Flex>
-      <DownButton navId='#GettingStarted' bottom='-5' />
+      <DownButton navId='#GettingStarted' bottom='-20' />
     </Box>
   )
 }

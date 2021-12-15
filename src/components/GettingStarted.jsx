@@ -65,7 +65,7 @@ const GettingStarted = () => {
           </Flex>
         </Grid>
       </Flex>
-      <DownButton navId='#Team' bottom='0' left='44%' />
+      <DownButton navId='#Team' bottom='-10' left='44%' />
     </Box>
   )
 }
