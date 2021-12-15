@@ -44,7 +44,7 @@ const Features = () => {
       h='100%'
       w='100vw'
       bgColor='#1A202C'
-      pb='2.5rem'
+      pb='3rem'
       >
       <Flex
         direction='column'
@@ -63,7 +63,7 @@ const Features = () => {
           Features
         </Heading>
 
-        <Flex width='90%' direction='column' justify='center' align={['center', 'center', 'center', 'start', 'start']} gap='2rem' pl={['2rem', '2rem', '6rem', '6rem', '6rem']}
+        <Flex width='90%' direction='column' justify='center' align='start' gap='2rem' pl={['2rem', '2rem', '6rem', '6rem', '6rem']}
         pr={['2rem', '2rem', '0', '0', '0']}>
           <StyledFeatureWrapper>
             <Icon as={GoGraph} boxSize={65} color='#42B8FD' mt='0.8rem'/>
@@ -98,7 +98,7 @@ const Features = () => {
           </StyledFeatureWrapper>
         </Flex>
       </Flex>
-      <DownButton navId='#GettingStarted' bottom='-20' />
+      <DownButton navId='#GettingStarted' bottom='-5' />
     </Box>
   )
 }

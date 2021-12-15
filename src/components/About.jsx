@@ -24,14 +24,17 @@ const About = () => {
   return (
     <Box
       h='100vh'
-      w='100%'>
+      w='100vw'
+      bgColor='#004A98'
+    >
       <Flex
         id='About'
         direction='column'
         justify='center'
         bgColor='#004A98'
         h='100%'
-        w='100%'>
+        w='100%'
+      >
         <Flex
           direction={["column", "column", "row", "row", "row"]}
           justifyContent='center'
@@ -39,7 +42,7 @@ const About = () => {
         >
           <Heading
             as='h1'
-            fontSize={['2.4rem','4.5rem','6.5rem','7.5rem','12rem']}
+            fontSize={['2.4rem','4.5rem','6.5rem','7.5rem','10rem']}
             fontFamily='Montserrat'
             size='4xl'
             textAlign={['center', 'center', 'left', 'left', 'left']}
@@ -56,7 +59,7 @@ const About = () => {
         </Flex>
 
       </Flex>
-      <DownButton navId='#Features' bottom='13%' />
+      <DownButton navId='#Features' bottom='28' />
     </Box>
   )
 }

@@ -33,7 +33,7 @@ const GettingStarted = () => {
         justify='center'
         align='center'
       >
-        <Heading as='h2' fontSize={['3rem','3rem','3rem','4rem','4.2rem']} bgColor='transparent' color='#fff' 
+        <Heading as='h2' fontSize={['2rem','3rem','3rem','4rem','4.2rem']} bgColor='transparent' color='#fff' 
         fontFamily='Montserrat'>
           Getting Started
         </Heading>
@@ -65,7 +65,7 @@ const GettingStarted = () => {
           </Flex>
         </Grid>
       </Flex>
-      <DownButton navId='#Team' bottom='0' left='48.5%' />
+      <DownButton navId='#Team' bottom='0' left='44%' />
     </Box>
   )
 }

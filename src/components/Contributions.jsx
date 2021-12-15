@@ -18,15 +18,15 @@ const Contributions = () => {
       id='Contributions'
       h='100vh'
       w='100vw'
-      pt='8rem'
+      pt='12rem'
       bgColor='#1A202C'>
       <Flex direction='column' justify='center' align='center'>
         <Image
           src={`${prefix}/T.png`}
           alt='Trace Logo'
           boxSize='150px' />
-        <Text fontSize='10rem' fontWeight='600' color='#fff'>TRACE</Text>
-        <Text fontSize='1.5rem' color='#fff'>To contribute to Trace or report any issues, visit our GitHub page <a href='https://github.com/oslabs-beta/trace' style={{ color: '#42B8FD'}}>here</a>.</Text>
+        <Text fontSize={['2.4rem','4.5rem','6.5rem','7.5rem','10rem']} fontWeight='600' color='#fff'>TRACE</Text>
+        <Text w='80%' textAlign='center' fontSize={['.9rem','1rem','1.2rem','1.4rem','1.5rem']} color='#fff'>To contribute to Trace or report any issues, visit our GitHub page <a href='https://github.com/oslabs-beta/trace' style={{ color: '#42B8FD'}}>here</a>.</Text>
         <Flex gap='2.3rem' pt='5rem'>
         <Link href='https://www.linkedin.com/company/go-trace'>
           <Icon

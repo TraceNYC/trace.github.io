@@ -26,72 +26,67 @@ const BioText = styled.p`
   color: #fff;
 `
 
-
 const Team = () => {
   return (
     <Box
-      h='100vh'
+      h='100%'
+      minHeight='100vh'
       w='100vw'
+      bgColor='#004A98'
+      pb='4rem'
     >
       <Box
         id='Team'
         h='100%'
-        w='100%'
-        pt='8rem'
-        pl='8rem'
-        pr='8rem'
-        bgColor='#004A98'>
+        w='100vw'
+        pt='9rem'
+        pl='3rem'
+        pr='3rem'
+        bgColor='#004A98'
+        align='center'
+      >
         {/* <motion.div
         initial={{ opacity: 0, pl: '-30px' }}
         whileInView={{ opacity: 1, pl: '8rem' }}
         viewport={{ once: true }}> */}
-        <Heading as='h2' size='4xl' bgColor='transparent' color='#fff' fontFamily='Montserrat'>
+        <Heading as='h2' fontSize={['3rem','3rem','3rem','4rem','4.2rem']} bgColor='transparent' color='#fff' fontFamily='Montserrat' pt='1rem'>
           Meet the Team
         </Heading>
         <Grid
-          templateColumns='repeat(2, 48%)'
+          templateColumns='repeat(2, 1fr)'
           templateRows='repeat(2, 20vh)'
           rowGap='5rem'
           columnGap='5rem'
           pt='5rem'
-          color='#fff'>
-
-
-          < Flex >
+          color='#fff'
+          w='100%'
+        >
+          <Flex direction='column' align='center'>
             <TempBox>Picture</TempBox>
-            <Flex direction='column'>
-              <NameText>Name</NameText>
-              <BioText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci delectus dolore libero, ex ipsa laudantium, quas repellat animi deleniti ut porro tenetur nesciunt! Nam blanditiis molestiae amet vitae quod.</BioText>
-            </Flex>
-          </Flex >
-          < Flex >
+            <NameText>Grace Yun</NameText>
+            <BioText>Software Engineer</BioText>
+          </Flex>
+          <Flex direction='column' align='center'>
             <TempBox>Picture</TempBox>
-            <Flex direction='column'>
-              <NameText>Name</NameText>
-              <BioText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci delectus dolore libero, ex ipsa laudantium, quas repellat animi deleniti ut porro tenetur nesciunt! Nam blanditiis molestiae amet vitae quod.</BioText>
-            </Flex>
-          </Flex >
+            <NameText>Pat Constant</NameText>
+            <BioText>Software Engineer</BioText>
+          </Flex>
 
-
-          < Flex >
+          <Flex direction='column' align='center'>
             <TempBox>Picture</TempBox>
-            <Flex direction='column'>
-              <NameText>Name</NameText>
-              <BioText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci delectus dolore libero, ex ipsa laudantium, quas repellat animi deleniti ut porro tenetur nesciunt! Nam blanditiis molestiae amet vitae quod.</BioText>
-            </Flex>
-          </Flex >
-          < Flex >
+            <NameText>Eddy Kwon</NameText>
+            <BioText>Software Engineer</BioText>
+          </Flex>
+          <Flex direction='column' align='center'>
             <TempBox>Picture</TempBox>
-            <Flex direction='column'>
-              <NameText>Name</NameText>
-              <BioText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci delectus dolore libero, ex ipsa laudantium, quas repellat animi deleniti ut porro tenetur nesciunt! Nam blanditiis molestiae amet vitae quod.</BioText>
-            </Flex>
-          </Flex >
+            <NameText>Alex Hager</NameText>
+            <BioText>Software Engineer</BioText>
+          </Flex>
 
         </Grid>
         {/* </motion.div> */}
       </Box>
-      <DownButton navId='#Contributions' />
+      <DownButton navId='#Contributions' bottom='-5' left='48%'/>
     </Box>
   )
 }
