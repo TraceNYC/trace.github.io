@@ -21,7 +21,7 @@ const Navbar = () => {
         gap='3rem'
       >
         <Flex alignItems='center' justify='center'>
-          <Link href="/">
+          <Link href="/" passHref>
             <Image
               src={`${prefix}/T.png`}
               alt='Trace Logo'
@@ -29,7 +29,7 @@ const Navbar = () => {
               _hover={{ cursor: 'pointer' }}
             />
           </Link>
-          <Link href="/">
+          <Link href="/" passHref>
             <Text
               ml={'.5rem'}
               px={2}
@@ -116,7 +116,7 @@ const Navbar = () => {
         gap='1.5rem'
         pr='0.5rem'
       >
-        <Link href='https://www.linkedin.com/company/go-trace'>
+        <Link href='https://www.linkedin.com/company/go-trace' passHref>
           <Icon
             as={AiFillLinkedin}
             aria-label='LinkedIn'
@@ -126,7 +126,7 @@ const Navbar = () => {
             transition={{ duration: 5 }}
           />
         </Link>
-        <Link href='https://github.com/oslabs-beta/trace'>
+        <Link href='https://github.com/oslabs-beta/trace' passHref>
           <Icon
             as={AiFillGithub}
             aria-label='GitHub'

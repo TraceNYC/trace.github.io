@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 import styled from 'styled-components'
 import { prefix } from '../utils/prefix';
 
-import DownButton from './Downbutton'
+import DownButton from './DownButton'
 
 const TempBox = styled.div`
   width: 150px;
