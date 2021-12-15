@@ -44,7 +44,7 @@ const Features = () => {
       h='100%'
       w='100vw'
       bgColor='#1A202C'
-      pb='2rem'
+      pb='2.5rem'
       >
       <Flex
         direction='column'

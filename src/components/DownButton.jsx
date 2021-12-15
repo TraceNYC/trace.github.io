@@ -1,11 +1,11 @@
 import { Link, Icon } from '@chakra-ui/react'
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
 
-const DownButton = ({ navId, bottom }) => (
+const DownButton = ({ navId, bottom, left='46%' }) => (
   <Link
     href={ navId }
     position='relative'
-    left='46%'
+    left={ left }
     bottom={ bottom }
     >
     <Icon

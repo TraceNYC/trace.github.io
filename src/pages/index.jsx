@@ -8,7 +8,7 @@ import { Flex } from '@chakra-ui/react'
 
 const Home = () => {
   return (
-    <Flex direction='column'>
+    <Flex direction='column' >
       <Landing />
       <About />
       <Features />
