@@ -31,7 +31,7 @@ const About = () => {
         justify='center'
         bgColor='#004A98'
         h='100%'
-        w={'calc(100vw - 8rem)'}>
+        w='100%'>
         <Flex
           direction={["column", "column", "row", "row", "row"]}
           justifyContent='center'
