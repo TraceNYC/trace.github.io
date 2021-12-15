@@ -5,7 +5,7 @@ const DownButton = ({ navId }) => (
   <Link
     href={ navId }
     position='relative'
-    left='50%'
+    left='46%'
     bottom='10%'>
     <Icon
       as={IoIosArrowDropdownCircle}
