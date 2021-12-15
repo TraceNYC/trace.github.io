@@ -9,7 +9,10 @@ import {
   Icon
 } from '@chakra-ui/react'
 
-import { IoIosArrowDropdownCircle } from 'react-icons/io'
+import { IoIosArrowDropdownCircle, IoStatsChart } from 'react-icons/io'
+import { FiPackage } from 'react-icons/fi'
+import { AiFillSetting } from 'react-icons/ai'
+import { FaRegChartBar } from 'react-icons/fa'
 
 import styled from 'styled-components'
 
@@ -23,7 +26,7 @@ const GettingStarted = () => {
         id='GettingStarted'
         h='100%'
         w='100%'
-        pt='6rem'
+        pt='8rem'
         pl='8rem'
         pr='8rem'
         bgColor='#1A202C'>
@@ -33,22 +36,28 @@ const GettingStarted = () => {
         <Grid
           templateColumns='repeat(3, 1fr)'
           columnGap='3rem'
-          pt='3rem'
+          pt='7rem'
           color='#fff'>
           <Flex direction='column' align='center'>
-            <Box h='270px' w='270px' border='1px' borderColor='#fff'><Code>Code</Code></Box>
+            <Icon
+              as={FiPackage}
+              boxSize='200' />
             <Text fontWeight='600' fontSize='1.8rem' color='#42B8FD' pt='3rem'>STEP 1</Text>
-            <Text color='#fff' textAlign='justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quidem soluta aut. Eos ipsa facere quasi eum deserunt vel necessitatibus.</Text>
+            <Text fontWeight='400' fontSize='1.3rem' color='#fff' textAlign='justify'>Install Trace's npm package</Text>
           </Flex>
           <Flex direction='column' align='center'>
-            <Box h='270px' w='270px' border='1px' borderColor='#fff'><Code>Code</Code></Box>
+            <Icon
+              as={AiFillSetting}
+              boxSize='200' />
             <Text fontWeight='600' fontSize='1.8rem' color='#42B8FD' pt='3rem'>STEP 2</Text>
-            <Text color='#fff' textAlign='justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quidem soluta aut. Eos ipsa facere quasi eum deserunt vel necessitatibus.</Text>
+            <Text fontWeight='400' fontSize='1.3rem' color='#fff' textAlign='justify'>Set your server up with Trace</Text>
           </Flex>
           <Flex direction='column' align='center'>
-            <Box h='270px' w='270px' border='1px' borderColor='#fff'><Code>Code</Code></Box>
+            <Icon
+              as={FaRegChartBar}
+              boxSize='200' />
             <Text fontWeight='600' fontSize='1.8rem' color='#42B8FD' pt='3rem'>STEP 3</Text>
-            <Text color='#fff' textAlign='justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quidem soluta aut. Eos ipsa facere quasi eum deserunt vel necessitatibus.</Text>
+            <Text fontWeight='400' fontSize='1.3rem' color='#fff' textAlign='justify'>Start viewing metrics</Text>
           </Flex>
         </Grid>
       </Box>

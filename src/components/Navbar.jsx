@@ -15,7 +15,8 @@ const Navbar = () => {
       color={'#fff'}
       p='0.6rem 1.2rem'
       width='100vw'
-      position='fixed'>
+      position='fixed'
+      zIndex='1'>
       <Flex
         alignItems="flex-end"
         gap='3rem'

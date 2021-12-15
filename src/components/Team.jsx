@@ -37,7 +37,7 @@ const Team = () => {
         id='Team'
         h='100%'
         w='100%'
-        pt='6rem'
+        pt='8rem'
         pl='8rem'
         pr='8rem'
         bgColor='#004A98'>
@@ -49,10 +49,10 @@ const Team = () => {
           Meet the Team
         </Heading>
         <Grid
-          templateColumns='repeat(2, 50%)'
+          templateColumns='repeat(2, 48%)'
           templateRows='repeat(2, 20vh)'
-          rowGap='3rem'
-          columnGap='3rem'
+          rowGap='5rem'
+          columnGap='5rem'
           pt='5rem'
           color='#fff'>
 

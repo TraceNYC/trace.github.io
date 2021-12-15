@@ -26,7 +26,7 @@ const About = () => {
         <Flex
           justify='center'
           align='center'
-          pt='15vh'>
+          pt='21vh'>
           <Heading
             as='h1'
             fontSize='9.9rem'
@@ -38,8 +38,8 @@ const About = () => {
             color='white'>
             What <br />is <br />Trace?
           </Heading>
-          <Text w='50%' color='#fff' pr='8rem' pl='3rem' fontSize='1.8rem' textAlign='justify'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quia praesentium temporibus, iste earum sit, nisi maiores, assumenda corrupti porro voluptas mollitia dolores ad illum repellendus facere obcaecati commodi reprehenderit officiis natus consequatur eius consectetur odio? Neque cum officiis dolor necessitatibus ullam, blanditiis tempore debitis libero, sapiente beatae optio ducimus!0
+          <Text w='50%' color='#fff' pr='8rem' pl='3rem' fontSize='1.4rem' lineHeight='1.7' textAlign='justify'>
+            Trace is a lightweight, open-source GraphQL query performance monitoring GUI that provides users with real-time, resolver-level performance tracing metrics and error logging. At its inception, Trace was created for the developer looking for a straightforward option for query performance monitoring on their Express-GraphQL server -- without having to install hefty libraries full of tools they'll never use such as Apollo or Hasura. Trace provides a simple, intuitive interface for users looking to test queries for their Express-GraphQL servers.
           </Text>
         </Flex>
 
