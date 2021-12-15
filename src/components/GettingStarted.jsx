@@ -4,7 +4,6 @@ import {
   Grid,
   Flex,
   Text,
-  Code,
   Link,
   Icon
 } from '@chakra-ui/react'
@@ -43,7 +42,7 @@ const GettingStarted = () => {
               as={FiPackage}
               boxSize='200' />
             <Text fontWeight='600' fontSize='1.8rem' color='#42B8FD' pt='3rem'>STEP 1</Text>
-            <Text fontWeight='400' fontSize='1.3rem' color='#fff' textAlign='justify'>Install Trace's npm package</Text>
+            <Text fontWeight='400' fontSize='1.3rem' color='#fff' textAlign='justify'>Install Trace{"'"}s npm package</Text>
           </Flex>
           <Flex direction='column' align='center'>
             <Icon
