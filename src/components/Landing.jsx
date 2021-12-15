@@ -24,7 +24,7 @@ const Landing = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}>
-        <Heading as='h1' fontSize='6rem' fontFamily={'Montserrat'} bgColor='transparent' color='white' textAlign='center'>
+        <Heading as='h1' fontSize='5.4rem' fontFamily={'Montserrat'} bgColor='transparent' color='white' textAlign='center'>
           Monitor  your <chakra.span color='#42B8FD'>GraphQL</chakra.span><br /> queries at the resolver level.
         </Heading>
       </motion.div>

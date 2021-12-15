@@ -11,6 +11,8 @@ import {
 
 import { IoIosArrowDropdownCircle } from 'react-icons/io'
 
+import styled from 'styled-components'
+
 const GettingStarted = () => {
   return (
     <Box
@@ -31,21 +33,21 @@ const GettingStarted = () => {
         <Grid
           templateColumns='repeat(3, 1fr)'
           columnGap='3rem'
-          pt='5rem'
+          pt='3rem'
           color='#fff'>
           <Flex direction='column' align='center'>
-            <Box h='300px' w='300px' border='1px' borderColor='#fff'><Code>Code</Code></Box>
-            <Text fontWeight='600' fontSize='2rem' color='#42B8FD' pt='5rem'>STEP 1</Text>
+            <Box h='270px' w='270px' border='1px' borderColor='#fff'><Code>Code</Code></Box>
+            <Text fontWeight='600' fontSize='1.8rem' color='#42B8FD' pt='3rem'>STEP 1</Text>
             <Text color='#fff' textAlign='justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quidem soluta aut. Eos ipsa facere quasi eum deserunt vel necessitatibus.</Text>
           </Flex>
           <Flex direction='column' align='center'>
-            <Box h='300px' w='300px' border='1px' borderColor='#fff'><Code>Code</Code></Box>
-            <Text fontWeight='600' fontSize='2rem' color='#42B8FD' pt='5rem'>STEP 2</Text>
+            <Box h='270px' w='270px' border='1px' borderColor='#fff'><Code>Code</Code></Box>
+            <Text fontWeight='600' fontSize='1.8rem' color='#42B8FD' pt='3rem'>STEP 2</Text>
             <Text color='#fff' textAlign='justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quidem soluta aut. Eos ipsa facere quasi eum deserunt vel necessitatibus.</Text>
           </Flex>
           <Flex direction='column' align='center'>
-            <Box h='300px' w='300px' border='1px' borderColor='#fff'><Code>Code</Code></Box>
-            <Text fontWeight='600' fontSize='2rem' color='#42B8FD' pt='5rem'>STEP 3</Text>
+            <Box h='270px' w='270px' border='1px' borderColor='#fff'><Code>Code</Code></Box>
+            <Text fontWeight='600' fontSize='1.8rem' color='#42B8FD' pt='3rem'>STEP 3</Text>
             <Text color='#fff' textAlign='justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quidem soluta aut. Eos ipsa facere quasi eum deserunt vel necessitatibus.</Text>
           </Flex>
         </Grid>

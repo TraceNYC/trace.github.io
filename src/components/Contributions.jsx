@@ -18,8 +18,7 @@ const Contributions = () => {
       id='Contributions'
       h='100vh'
       w='100vw'
-      pt='6rem'
-      pl='8rem'
+      pt='8rem'
       bgColor='#1A202C'>
       <Flex direction='column' justify='center' align='center'>
         <Image
