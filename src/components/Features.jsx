@@ -8,7 +8,7 @@ import {
 
 import { GoGraph } from 'react-icons/go'
 import { MdOutlineAutoGraph } from 'react-icons/md'
-import { GiLightningTear } from 'react-icons/gi'
+import { GiFlexibleStar, GiLightningTear } from 'react-icons/gi'
 import { BiError } from 'react-icons/bi'
 import styled from 'styled-components'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
@@ -40,11 +40,13 @@ const StyledFeatureWrapper = styled.div`
 
 const Features = () => {
   return (
-    <Box
+    <Flex
       h='100%'
       minHeight='100vh'
       w='100vw'
       bgColor='#1A202C'
+      direction='column'
+      justify='space-between'
       >
       <Flex
         direction='column'
@@ -98,8 +100,8 @@ const Features = () => {
           </StyledFeatureWrapper>
         </Flex>
       </Flex>
-      <DownButton navId='#GettingStarted' bottom='-1.5vh' />
-    </Box>
+      <DownButton navId='#GettingStarted' bottom='4vh' />
+    </Flex>
   )
 }
 

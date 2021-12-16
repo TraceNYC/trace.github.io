@@ -15,12 +15,13 @@ import { FaRegChartBar } from 'react-icons/fa'
 
 const GettingStarted = () => {
   return (
-    <Box
+    <Flex
       h='100%'
       minHeight='100vh'
       w='100vw'
-      pb='5rem'
       bgColor='#1A202C'
+      direction='column'
+      justify='space-between'
     >
       <Flex
         direction='column'
@@ -65,8 +66,8 @@ const GettingStarted = () => {
           </Flex>
         </Grid>
       </Flex>
-      <DownButton navId='#Team' bottom='-10' left='44%' />
-    </Box>
+      <DownButton navId='#Team' bottom='4vh' />
+    </Flex>
   )
 }
 
