@@ -23,13 +23,31 @@ const breakpoints = createBreakpoints({
 
 
 const NameText = styled.p`
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #42B8FD;
+  margin-top: 10px;
+
+  @media (min-width: 30em) {
+    font-size: 0.7rem;
+  }
+  @media (min-width: 55em) {
+    font-size: 0.9rem;
+  }
+  @media (min-width: 62em) {
+    font-size: 1.1rem;
+  }
+  @media (min-width: 80em) {
+    font-size: 1.3rem;
+  }
+  @media (min-width: 96em) {
+    font-size: 1.5rem;
+  }
+  
 `
 
 const BioText = styled.p`
   color: #fff;
+  font-weight: 400;
 `
 
 const Team = () => {
@@ -53,7 +71,12 @@ const Team = () => {
         initial={{ opacity: 0, pl: '-30px' }}
         whileInView={{ opacity: 1, pl: '8rem' }}
         viewport={{ once: true }}> */}
-        <Heading as='h2' fontSize={['2rem', '3rem', '3rem', '4rem', '4.2rem']} bgColor='transparent' color='#fff' fontFamily='Montserrat' pt='1rem'>
+        <Heading as='h2' 
+          fontSize={['2rem', '3rem', '3rem', '4rem', '4.2rem']} 
+          bgColor='transparent' 
+          color='#fff' 
+          fontFamily='Montserrat'
+          mt={[-50, 0, 0, 0, 0]}>
           Meet the Team
         </Heading>
         {/* <Grid
@@ -65,55 +88,80 @@ const Team = () => {
           color='#fff'
           w='100vw'
         > */}
-        <Flex 
-          justify='space-around'
+        <Flex
+          justify='center'
           direction={['column', 'column', 'row', 'row', 'row']}
-          mt={['30px', '50px', '70px', '90px', '100px']}>
-          <Flex direction='column' align='center'>
+          mt={['40px', '20px', '20px', '90px', '100px']}
+          gap={['25px', '40px', '60px', '3px', '100px']}>
+          <Flex 
+            direction={['row', 'row', 'column', 'column', 'column']}
+            align='center' 
+            justify='center'
+            gap='5px'>
             <Image
               src={`${prefix}/GraceHeadshot.png`}
               fallbackSrc={`${prefix}/T.png`}
               alt='Grace head shot'
               borderRadius='full'
-              boxSize={['100px', '100px','100px', '150px', '150px']}
+              boxSize={['100px', '100px', '100px', '150px', '200px']}
               objectFit='cover' />
-            <NameText>Grace Yun</NameText>
-            <BioText>Software Engineer</BioText>
+            <Flex direction='column' align={['start', 'start', 'center', 'center', 'center']}>
+              <NameText>Grace Yun</NameText>
+              <BioText>Software Engineer</BioText>
+            </Flex>
           </Flex>
-          <Flex direction='column' align='center'>
+          <Flex 
+            direction={['row', 'row', 'column', 'column', 'column']}
+            align='center' 
+            justify='center'
+            gap='5px'>
             <Image
               src={`${prefix}/PatHeadshot.png`}
-              alt='Pat head shot'
               fallbackSrc={`${prefix}/T.png`}
+              alt='Grace head shot'
               borderRadius='full'
-              boxSize={['100px', '100px','100px', '150px', '150px']}
+              boxSize={['100px', '100px', '100px', '150px', '200px']}
               objectFit='cover' />
-            <NameText>Pat Constant</NameText>
-            <BioText>Software Engineer</BioText>
+            <Flex direction='column' align={['start', 'start', 'center', 'center', 'center']}>
+              <NameText>Pat Constant</NameText>
+              <BioText>Software Engineer</BioText>
+            </Flex>
           </Flex>
-
-          <Flex direction='column' align='center'>
-          <Image
+          <Flex 
+            direction={['row', 'row', 'column', 'column', 'column']}
+            align='center' 
+            justify='center'
+            gap='5px'>
+            <Image
               src={`${prefix}/EddyHeadshot.png`}
-              alt='Eddy head shot'
               fallbackSrc={`${prefix}/T.png`}
+              alt='Grace head shot'
               borderRadius='full'
-              boxSize={['100px', '100px','100px', '150px', '150px']}
+              boxSize={['100px', '100px', '100px', '150px', '200px']}
               objectFit='cover' />
-            <NameText>Eddy Kwon</NameText>
-            <BioText>Software Engineer</BioText>
+            <Flex direction='column' align={['start', 'start', 'center', 'center', 'center']}>
+              <NameText>Eddy Kwon</NameText>
+              <BioText>Software Engineer</BioText>
+            </Flex>
           </Flex>
-          <Flex direction='column' align='center'>
+          <Flex 
+            direction={['row', 'row', 'column', 'column', 'column']}
+            align='center' 
+            justify='center'
+            gap='5px'>
             <Image
               src={`${prefix}/AlexHeadshot.png`}
-              alt='Alex head shot'
               fallbackSrc={`${prefix}/T.png`}
+              alt='Grace head shot'
               borderRadius='full'
-              boxSize={['100px', '100px','100px', '150px', '150px']}
+              boxSize={['100px', '100px', '100px', '150px', '200px']}
               objectFit='cover' />
-            <NameText>Alex Hager</NameText>
-            <BioText>Software Engineer</BioText>
+            <Flex direction='column' align={['start', 'start', 'center', 'center', 'center']}>
+              <NameText>Alex Hager</NameText>
+              <BioText>Software Engineer</BioText>
+            </Flex>
           </Flex>
+          
         </Flex>
         {/* </Grid> */}
         {/* </motion.div> */}
