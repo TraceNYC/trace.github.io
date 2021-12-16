@@ -45,7 +45,6 @@ const Features = () => {
       minHeight='100vh'
       w='100vw'
       bgColor='#1A202C'
-      pb='3rem'
       >
       <Flex
         direction='column'
@@ -99,7 +98,7 @@ const Features = () => {
           </StyledFeatureWrapper>
         </Flex>
       </Flex>
-      <DownButton navId='#GettingStarted' bottom='-20' />
+      <DownButton navId='#GettingStarted' bottom='-1.5vh' />
     </Box>
   )
 }
