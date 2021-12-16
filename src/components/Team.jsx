@@ -3,9 +3,16 @@ import {
   Heading,
   Grid,
   Flex,
-  Image
+  Image,
+  Link,
+  Icon
 } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
+
+import {
+  AiFillGithub,
+  AiFillLinkedin
+} from "react-icons/ai";
 
 import { motion } from "framer-motion"
 import styled from 'styled-components'
@@ -23,7 +30,7 @@ const breakpoints = createBreakpoints({
 
 
 const NameText = styled.p`
-  font-weight: 500;
+  font-weight: 600;
   color: #42B8FD;
   margin-top: 10px;
 
@@ -72,10 +79,10 @@ const Team = () => {
         initial={{ opacity: 0, pl: '-30px' }}
         whileInView={{ opacity: 1, pl: '8rem' }}
         viewport={{ once: true }}> */}
-        <Heading as='h2' 
-          fontSize={['2rem', '3rem', '3rem', '4rem', '4.2rem']} 
-          bgColor='transparent' 
-          color='#fff' 
+        <Heading as='h2'
+          fontSize={['2rem', '3rem', '3rem', '4rem', '4.2rem']}
+          bgColor='transparent'
+          color='#fff'
           fontFamily='Montserrat'
           mt={[-50, 0, 0, 0, 0]}>
           Meet the Team
@@ -92,13 +99,13 @@ const Team = () => {
         <Flex
           justify='center'
           direction={['column', 'column', 'row', 'row', 'row']}
-          pt={['40px', '20px', '40px', '100px', '100px']}
+          pt={['40px', '20px', '40px', '90px', '90px']}
           gap={['25px', '40px', '60px', '80px', '100px']}>
-          <Flex 
+          <Flex
             direction={['row', 'row', 'column', 'column', 'column']}
-            align='center' 
+            align='center'
             justify='center'
-            gap='5px'>
+            gap={['15px', '15px', '5px', '5px', '5px']}>
             <Image
               src={`${prefix}/GraceHeadshot.png`}
               fallbackSrc={`${prefix}/T.png`}
@@ -108,14 +115,33 @@ const Team = () => {
               objectFit='cover' />
             <Flex direction='column' align={['start', 'start', 'center', 'center', 'center']}>
               <NameText>Grace Yun</NameText>
-              <BioText>Software Engineer</BioText>
+              <Flex gap='3px'>
+                <Link href='https://www.linkedin.com/in/gracejueunyun/' passHref>
+                  <Icon
+                    as={AiFillLinkedin}
+                    aria-label='LinkedIn'
+                    boxSize={['15px', '20px', '25px', '30px', '35px']}
+                    color='#eee'
+                    _hover={{ color: '#fff', cursor: 'pointer' }}
+                  />
+                </Link>
+                <Link href='https://github.com/jueungrace' passHref>
+                  <Icon
+                    as={AiFillGithub}
+                    aria-label='GitHub'
+                    boxSize={['15px', '20px', '25px', '30px', '35px']}
+                    color='#eee'
+                    _hover={{ color: '#fff', cursor: 'pointer' }}
+                  />
+                </Link>
+              </Flex>
             </Flex>
           </Flex>
-          <Flex 
+          <Flex
             direction={['row', 'row', 'column', 'column', 'column']}
-            align='center' 
+            align='center'
             justify='center'
-            gap='5px'>
+            gap={['15px', '15px', '5px', '5px', '5px']}>
             <Image
               src={`${prefix}/PatHeadshot.png`}
               fallbackSrc={`${prefix}/T.png`}
@@ -125,14 +151,33 @@ const Team = () => {
               objectFit='cover' />
             <Flex direction='column' align={['start', 'start', 'center', 'center', 'center']}>
               <NameText>Pat Constant</NameText>
-              <BioText>Software Engineer</BioText>
+              <Flex gap='3px'>
+                <Link href='https://www.linkedin.com/in/patrickconstant/' passHref>
+                  <Icon
+                    as={AiFillLinkedin}
+                    aria-label='LinkedIn'
+                    boxSize={['15px', '20px', '25px', '30px', '35px']}
+                    color='#eee'
+                    _hover={{ color: '#fff', cursor: 'pointer' }}
+                  />
+                </Link>
+                <Link href='https://github.com/PLConstant' passHref>
+                  <Icon
+                    as={AiFillGithub}
+                    aria-label='GitHub'
+                    boxSize={['15px', '20px', '25px', '30px', '35px']}
+                    color='#eee'
+                    _hover={{ color: '#fff', cursor: 'pointer' }}
+                  />
+                </Link>
+              </Flex>
             </Flex>
           </Flex>
-          <Flex 
+          <Flex
             direction={['row', 'row', 'column', 'column', 'column']}
-            align='center' 
+            align='center'
             justify='center'
-            gap='5px'>
+            gap={['15px', '15px', '5px', '5px', '5px']}>
             <Image
               src={`${prefix}/EddyHeadshot.png`}
               fallbackSrc={`${prefix}/T.png`}
@@ -142,14 +187,33 @@ const Team = () => {
               objectFit='cover' />
             <Flex direction='column' align={['start', 'start', 'center', 'center', 'center']}>
               <NameText>Eddy Kwon</NameText>
-              <BioText>Software Engineer</BioText>
+              <Flex gap='3px'>
+                <Link href='https://www.linkedin.com/in/eddykwon/' passHref>
+                  <Icon
+                    as={AiFillLinkedin}
+                    aria-label='LinkedIn'
+                    boxSize={['15px', '20px', '25px', '30px', '35px']}
+                    color='#eee'
+                    _hover={{ color: '#fff', cursor: 'pointer' }}
+                  />
+                </Link>
+                <Link href='https://github.com/edwardkwon95' passHref>
+                  <Icon
+                    as={AiFillGithub}
+                    aria-label='GitHub'
+                    boxSize={['15px', '20px', '25px', '30px', '35px']}
+                    color='#eee'
+                    _hover={{ color: '#fff', cursor: 'pointer' }}
+                  />
+                </Link>
+              </Flex>
             </Flex>
           </Flex>
-          <Flex 
+          <Flex
             direction={['row', 'row', 'column', 'column', 'column']}
-            align='center' 
+            align='center'
             justify='center'
-            gap='5px'>
+            gap={['15px', '15px', '5px', '5px', '5px']}>
             <Image
               src={`${prefix}/AlexHeadshot.png`}
               fallbackSrc={`${prefix}/T.png`}
@@ -159,10 +223,29 @@ const Team = () => {
               objectFit='cover' />
             <Flex direction='column' align={['start', 'start', 'center', 'center', 'center']}>
               <NameText>Alex Hager</NameText>
-              <BioText>Software Engineer</BioText>
+              <Flex gap='3px'>
+                <Link href='https://www.linkedin.com/in/hager-alexander/' passHref>
+                  <Icon
+                    as={AiFillLinkedin}
+                    aria-label='LinkedIn'
+                    boxSize={['15px', '20px', '25px', '30px', '35px']}
+                    color='#eee'
+                    _hover={{ color: '#fff', cursor: 'pointer' }}
+                  />
+                </Link>
+                <Link href='https://github.com/Alexh2510' passHref>
+                  <Icon
+                    as={AiFillGithub}
+                    aria-label='GitHub'
+                    boxSize={['15px', '20px', '25px', '30px', '35px']}
+                    color='#eee'
+                    _hover={{ color: '#fff', cursor: 'pointer' }}
+                  />
+                </Link>
+              </Flex>
             </Flex>
           </Flex>
-          
+
         </Flex>
         {/* </Grid> */}
         {/* </motion.div> */}
