@@ -16,7 +16,8 @@ const Contributions = () => {
   return (
     <Box
       id='Contributions'
-      h='100vh'
+      h='100%'
+      minHeight='100vh'
       w='100vw'
       pt='12rem'
       bgColor='#1A202C'>

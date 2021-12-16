@@ -53,7 +53,8 @@ const BioText = styled.p`
 const Team = () => {
   return (
     <Flex
-      h='100vh'
+      h='100%'
+      minHeight='100vh'
       w='100vw'
       bgColor='#004A98'
       direction='column'
@@ -91,8 +92,8 @@ const Team = () => {
         <Flex
           justify='center'
           direction={['column', 'column', 'row', 'row', 'row']}
-          mt={['40px', '20px', '20px', '90px', '100px']}
-          gap={['25px', '40px', '60px', '3px', '100px']}>
+          pt={['40px', '20px', '40px', '100px', '100px']}
+          gap={['25px', '40px', '60px', '80px', '100px']}>
           <Flex 
             direction={['row', 'row', 'column', 'column', 'column']}
             align='center' 

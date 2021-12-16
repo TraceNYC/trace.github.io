@@ -53,7 +53,7 @@ const Features = () => {
         id='Features'
         h='100%'
         w='100%'
-        pt='8rem'
+        pt='15vh'
         pl={['0', '0', '6rem', '6rem', '6rem']}
         bgColor='#1A202C'
         align={['center', 'center', 'flex-start']}
@@ -68,34 +68,34 @@ const Features = () => {
         <Flex width='90%' direction='column' justify='center' align='start' gap='2rem' pl={['2rem', '2rem', '6rem', '6rem', '6rem']}
         pr={['2rem', '2rem', '0', '0', '0']}>
           <StyledFeatureWrapper>
-            <Icon as={GoGraph} boxSize={65} color='#42B8FD' mt='0.8rem'/>
+            <Icon as={GoGraph} boxSize={[29.99, 34.99, 39.99, 59.99, 65]} color='#42B8FD' mt='0.8rem'/>
             <Flex direction='column'>
-              <Heading as='h3' fontSize={['1.2rem','1.5rem','1.7rem','2.5rem','2.7rem']} fontWeight='600' color='#42B8FD' fontFamily='Montserrat'>Real-time data collection</Heading>
-              <Text fontSize={['.9rem','1rem','1.2rem','1.4rem','1.4rem']} color='#fff' >Real-time, resolver-level query performance data collection from your GraphQL server</Text>
+              <Heading as='h3' fontSize={['1.1rem','1.2rem','1.3rem','2.3rem','2.7rem']} fontWeight='600' color='#42B8FD' fontFamily='Montserrat'>Real-time data collection</Heading>
+              <Text fontSize={['.8rem','1rem','1rem','1.4rem','1.4rem']} color='#fff' >Real-time, resolver-level query performance data collection from your GraphQL server</Text>
             </Flex>
           </StyledFeatureWrapper>
 
           <StyledFeatureWrapper>
-            <Icon as={MdOutlineAutoGraph} boxSize={65} color='#42B8FD' mt='0.8rem' />
+            <Icon as={MdOutlineAutoGraph} boxSize={[29.99, 34.99, 39.99, 59.99, 65]} color='#42B8FD' mt='0.8rem' />
             <Flex direction='column'>
-            <Heading as='h3' fontSize={['1.2rem','1.5rem','1.7rem','2.5rem','2.7rem']} fontWeight='600' color='#42B8FD' fontFamily='Montserrat'>Data visualization</Heading>
-              <Text fontSize={['.9rem','1rem','1.2rem','1.4rem','1.4rem']} color='#fff'> Visualization of individual query traces and averages</Text>
+            <Heading as='h3' fontSize={['1.1rem','1.2rem','1.3rem','2.3rem','2.7rem']} fontWeight='600' color='#42B8FD' fontFamily='Montserrat'>Data visualization</Heading>
+              <Text fontSize={['.8rem','1rem','1rem','1.4rem','1.4rem']} color='#fff'> Visualization of individual query traces and averages</Text>
             </Flex>
           </StyledFeatureWrapper>
 
           <StyledFeatureWrapper>
-            <Icon as={GiLightningTear} boxSize={65} color='#42B8FD' mt='0.8rem' />
+            <Icon as={GiLightningTear} boxSize={[29.99, 34.99, 39.99, 59.99, 65]} color='#42B8FD' mt='0.8rem' />
             <Flex direction='column'>
-              <Heading as='h3' fontSize={['1.2rem','1.5rem','1.7rem','2.5rem','2.7rem']} fontWeight='600' color='#42B8FD' fontFamily='Montserrat'>Valuable insights in one view</Heading>
-              <Text fontSize={['.9rem','1rem','1.2rem','1.4rem','1.4rem']} color='#fff'>Insights on the averages and counts of root operations and specific resolvers</Text>
+              <Heading as='h3' fontSize={['1.1rem','1.2rem','1.3rem','2.3rem','2.7rem']} fontWeight='600' color='#42B8FD' fontFamily='Montserrat'>Valuable insights in one view</Heading>
+              <Text fontSize={['.8rem','1rem','1rem','1.4rem','1.4rem']} color='#fff'>Insights on the averages and counts of root operations and specific resolvers</Text>
             </Flex>
           </StyledFeatureWrapper>
 
           <StyledFeatureWrapper>
-            <Icon as={BiError} boxSize={65} color='#42B8FD' mt='0.8rem' />
+            <Icon as={BiError} boxSize={[29.99, 34.99, 39.99, 59.99, 65]} color='#42B8FD' mt='0.8rem' />
             <Flex direction='column'>
-              <Heading as='h3' fontSize={['1.2rem','1.5rem','1.7rem','2.5rem','2.7rem']} fontWeight='600' color='#42B8FD' fontFamily='Montserrat'>Error tracking</Heading>
-              <Text fontSize={['.9rem','1rem','1.2rem','1.4rem','1.4rem']} color='#fff'>Error tracking for queries that fail during the GraphQL parsing, validation, or execution phase</Text>
+              <Heading as='h3' fontSize={['1.1rem','1.2rem','1.3rem','2.3rem','2.7rem']} fontWeight='600' color='#42B8FD' fontFamily='Montserrat'>Error tracking</Heading>
+              <Text fontSize={['.8rem','1rem','1rem','1.4rem','1.4rem']} color='#fff'>Error tracking for queries that fail during the GraphQL parsing, validation, or execution phase</Text>
             </Flex>
           </StyledFeatureWrapper>
         </Flex>

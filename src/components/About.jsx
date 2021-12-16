@@ -24,7 +24,6 @@ const About = () => {
   return (
     <Flex
       h='100vh'
-      minHeight='100vh'
       w='100vw'
       bgColor='#004A98'
       direction='column'
